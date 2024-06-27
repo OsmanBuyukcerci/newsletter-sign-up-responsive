@@ -34,11 +34,13 @@ document.getElementById("email").addEventListener("input", (e) => {
 });
 
 document.getElementById("form-email").addEventListener("submit", (event) => {
-  event.preventDefault();
-  wrapper_success.style.visibility = "visible";
-  if (wrapper_success) {
-    let span_email = document.getElementById("span-email");
-    span_email.innerText = input_email;
+  if (input_email != undefined) {
+    event.preventDefault();
+    wrapper_success.style.visibility = "visible";
+    if (wrapper_success) {
+      let span_email = document.getElementById("span-email");
+      span_email.innerText = input_email;
+    }
   }
 });
 
