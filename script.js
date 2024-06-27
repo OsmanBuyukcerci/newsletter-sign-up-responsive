@@ -34,7 +34,8 @@ document.getElementById("email").addEventListener("input", (e) => {
 });
 
 document.getElementById("form-email").addEventListener("submit", (event) => {
-  if (input_email != undefined) {
+  console.log(input_email);
+  if (input_email != undefined && input_email != "") {
     event.preventDefault();
     wrapper_success.style.visibility = "visible";
     if (wrapper_success) {
