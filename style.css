@@ -123,14 +123,14 @@ form label {
   --padding-btn: 1.2rem;
   --br: 0.6rem;
 
+  position: fixed;
+  top: 0;
+  left: 0;
   visibility: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--clr-white);
-  position: absolute;
-  right: 0;
-  top: 0;
   padding: calc(var(--padding) / 2);
   width: 100%;
   height: 100dvh;
